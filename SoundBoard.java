@@ -11,7 +11,7 @@ public class SoundBoard extends JFrame /*implements KeyListener, ActionListener*
 	static final String newline = System.getProperty("line.separator");
 	private SourceDataLine line;
 	private AudioInputStream a;
-	private static Clip[] myClips = new Clip[18];
+	private static Clip[] myClips = new Clip[26];
 	private static int clipCount = 0;
 	
 	public SoundBoard(String name) {
@@ -37,6 +37,14 @@ public class SoundBoard extends JFrame /*implements KeyListener, ActionListener*
 		createNote("WoW.wav");
 		createNote("sandstorm.wav");
 		createNote("rickroll.wav");
+		createNote("yee-mania.wav");
+		createNote("sanic.wav");
+		createNote("helicopter.wav");
+		createNote("navy-seal.wav");
+		createNote("john-cena.wav");
+		createNote("just-do-it.wav");
+		createNote("shots-fired.wav");
+		createNote("never-done-that.wav");
 
 		addKeyListener(new KeyListener() {
 			public void keyTyped(KeyEvent e) {
@@ -50,69 +58,107 @@ public class SoundBoard extends JFrame /*implements KeyListener, ActionListener*
 				switch (e.getKeyCode()) {
 					case KeyEvent.VK_H:
 						myClips[0].start();
+						myClips[0].loop(Clip.LOOP_CONTINUOUSLY);
 						break;
 					case KeyEvent.VK_J:
 						myClips[1].start();
+						myClips[1].loop(Clip.LOOP_CONTINUOUSLY);
 						break;
 					case KeyEvent.VK_A:
 						myClips[2].start();
-					
+						myClips[2].loop(Clip.LOOP_CONTINUOUSLY);
 						break;
 					case KeyEvent.VK_S:
 						myClips[3].start();
+						myClips[3].loop(Clip.LOOP_CONTINUOUSLY);
 						break;
 					case KeyEvent.VK_D:
 						myClips[4].start();
-					
+						myClips[4].loop(Clip.LOOP_CONTINUOUSLY);
 						break;
 					case KeyEvent.VK_F:
 						myClips[5].start();
-					
+						myClips[5].loop(Clip.LOOP_CONTINUOUSLY);
 						break;
 					case KeyEvent.VK_G:
 						myClips[6].start();
-						
+						myClips[6].loop(Clip.LOOP_CONTINUOUSLY);
 						break;
 					case KeyEvent.VK_K:
 						myClips[7].start();
-						
+						myClips[7].loop(Clip.LOOP_CONTINUOUSLY);
 						break;
 					case KeyEvent.VK_L:
 						myClips[8].start();
-						
+						myClips[8].loop(Clip.LOOP_CONTINUOUSLY);
 						break;
-					case KeyEvent.VK_SEMICOLON:
+					case KeyEvent.VK_O:
 						myClips[9].start();
-					
+						myClips[9].loop(Clip.LOOP_CONTINUOUSLY);
 						break;
-					case KeyEvent.VK_QUOTE:
+					case KeyEvent.VK_P:
 						myClips[10].start();
-
+						myClips[10].loop(Clip.LOOP_CONTINUOUSLY);
 						break;
 					case KeyEvent.VK_W:
 						myClips[11].start();
-
+						myClips[11].loop(Clip.LOOP_CONTINUOUSLY);
 						break;
 					case KeyEvent.VK_E:
 						myClips[12].start();
-
+						myClips[12].loop(Clip.LOOP_CONTINUOUSLY);
 						break;
 					case KeyEvent.VK_R:
 						myClips[13].start();
-
+						myClips[13].loop(Clip.LOOP_CONTINUOUSLY);
 						break;
 					case KeyEvent.VK_T:
 						myClips[14].start();
+						myClips[14].loop(Clip.LOOP_CONTINUOUSLY);
 						break;
 					case KeyEvent.VK_Y:
 						myClips[15].start();
-
+						myClips[15].loop(Clip.LOOP_CONTINUOUSLY);
 						break;
 					case KeyEvent.VK_U:
 						myClips[16].start();
+						myClips[16].loop(Clip.LOOP_CONTINUOUSLY);
 						break;
 					case KeyEvent.VK_I:
 						myClips[17].start();
+						myClips[17].loop(Clip.LOOP_CONTINUOUSLY);
+						break;
+					case KeyEvent.VK_Q:
+						myClips[18].start();
+						myClips[18].loop(Clip.LOOP_CONTINUOUSLY);
+						break;
+					case KeyEvent.VK_Z:
+						myClips[19].start();
+						myClips[19].loop(Clip.LOOP_CONTINUOUSLY);
+						break;
+					case KeyEvent.VK_X:
+						myClips[20].start();
+						myClips[20].loop(Clip.LOOP_CONTINUOUSLY);
+						break;
+					case KeyEvent.VK_C:
+						myClips[21].start();
+						myClips[21].loop(Clip.LOOP_CONTINUOUSLY);
+						break;
+					case KeyEvent.VK_V:
+						myClips[22].start();
+						myClips[22].loop(Clip.LOOP_CONTINUOUSLY);
+						break;
+					case KeyEvent.VK_B:
+						myClips[23].start();
+						myClips[23].loop(Clip.LOOP_CONTINUOUSLY);
+						break;
+					case KeyEvent.VK_N:
+						myClips[24].start();
+						myClips[24].loop(Clip.LOOP_CONTINUOUSLY);
+						break;
+					case KeyEvent.VK_M:
+						myClips[25].start();
+						myClips[25].loop(Clip.LOOP_CONTINUOUSLY);
 						break;
 				}
 			}
@@ -157,11 +203,11 @@ public class SoundBoard extends JFrame /*implements KeyListener, ActionListener*
 						myClips[8].stop();
 						myClips[8].setFramePosition(0);
 						break;
-					case KeyEvent.VK_SEMICOLON:
+					case KeyEvent.VK_O:
 						myClips[9].stop();
 						myClips[9].setFramePosition(0);
 						break;
-					case KeyEvent.VK_QUOTE:
+					case KeyEvent.VK_P:
 						myClips[10].stop();
 						myClips[10].setFramePosition(0);
 						break;
@@ -192,6 +238,37 @@ public class SoundBoard extends JFrame /*implements KeyListener, ActionListener*
 					case KeyEvent.VK_I:
 						myClips[17].stop();
 						myClips[17].setFramePosition(0);
+						break;
+					case KeyEvent.VK_Q:
+						myClips[18].stop();
+						myClips[18].setFramePosition(0);
+					case KeyEvent.VK_Z:
+						myClips[19].stop();
+						myClips[19].setFramePosition(0);
+						break;
+					case KeyEvent.VK_X:
+						myClips[20].stop();
+						myClips[20].setFramePosition(0);
+						break;
+					case KeyEvent.VK_C:
+						myClips[21].stop();
+						myClips[21].setFramePosition(0);
+						break;
+					case KeyEvent.VK_V:
+						myClips[22].stop();
+						myClips[22].setFramePosition(0);
+						break;
+					case KeyEvent.VK_B:
+						myClips[23].stop();
+						myClips[23].setFramePosition(0);
+						break;
+					case KeyEvent.VK_N:
+						myClips[24].stop();
+						myClips[24].setFramePosition(0);
+						break;
+					case KeyEvent.VK_M:
+						myClips[25].stop();
+						myClips[25].setFramePosition(0);
 						break;
 				}
 			}
