@@ -1,4 +1,4 @@
-# SoundBoard
+# Soundboard
 Extension of the Java piano class to a soundboard of popular internet sounds
 
 ## Setup
